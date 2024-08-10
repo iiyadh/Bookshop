@@ -1,0 +1,177 @@
+.dashboard{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    .header {
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .search-bar {
+        display: flex;
+        flex-grow: 1;
+        margin: 0 20px;
+    }
+    
+    .search-bar input {
+        flex-grow: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+    }
+    
+    .search-bar button {
+        padding: 10px;
+        background-color: orange;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .Loggout, .cart {
+        display: flex;
+        align-items: center;
+        gap:5px;
+        cursor: pointer;
+    }
+    .Loggout{
+        margin-right: 20px;
+    }
+    .Price{
+        display: flex;
+        align-items: center;
+    }
+
+    .Meta{
+        display: flex;
+        gap:20px;
+    }
+    
+    .Loggout svg, .cart svg {
+        height: 30px;
+        margin-right: 5px;
+        fill:orange
+    }
+    
+    .navbar {
+        background-color: orange;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .breadcrumb {
+        padding: 10px 20px;
+        background-color: #f8f8f8;
+    }
+    
+    .main-content {
+        display: flex;
+        padding: 20px;
+    }
+    
+    .sidebar {
+        width: 20%;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    
+    .sidebar h3 {
+        margin-top: 0;
+    }
+    .sidebar input{
+        accent-color: orange;
+    }
+    
+    .products {
+        width: 80%;
+    }
+    
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .product {
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .product img {
+        max-width: 100%;
+        width: 150px;
+        height: 225px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    
+    .product h3 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    .product .price {
+        color: orange;
+        font-weight: bold;
+    }
+    
+    .product .stock {
+        color: green;
+        margin: 10px 0;
+        display: block;
+    }
+    
+    .product button {
+        background-color: orange;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        margin-top:15px;
+    }
+    button:disabled{
+        background-color: gray;
+    }
+    .btn-price{
+        background-color: orange;
+        align-self: center;
+        width: 100px;
+        padding: 8px 10px;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        &:hover{
+            border: 1px solid black;
+        }
+    }
+}
